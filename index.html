@@ -8,25 +8,26 @@ WHEN I view the image elements
 * √ THEN I find accessible alt attributes
 WHEN I view the heading attributes
 * √ TODO: THEN they fall in sequential order 
-? changed <h2> ln 94 to <h3>
 WHEN I view the title element
 * √ THEN I find a concise, descriptive title
-? 9-29: changed <div> ln 28 to header <div> ln 30 to <nav> same in css lns 27, 35, 39
-?   <div> ln 44 to <figure>, ln 47 to <main>, ln 70 to <aside>, 48, 55, 62, 71, 78, 85 to <section>, 93 to <footer>
 -->
 
 <!DOCTYPE html>
 <html lang="en-us">
-
+<!-- behind the scenes meta data goes here -->
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Horiseon SEO</title>
 </head>
-
+<!-- all the code that the end user will see goes in the body -->
 <body>
+    <!-- changed from div to header
+         introductory content and navigation links -->
     <header class="header">
         <h1>Hori<span class="seo">seo</span>n</h1>
+        <!-- changed from div to nav 
+        navigation links directing user to different parts of the document/page -->
         <nav>
             <ul>
                 <li>
@@ -41,10 +42,15 @@ WHEN I view the title element
             </ul>
         </nav>
     </header>
+    <!-- changed from div to figure
+    self contained content. holding the main image of the page -->
     <figure class="hero">
         <img src="./assets/images/digital-marketing-meeting.jpg" class="hero" alt="our team working hard to boost your business search engine optimization">
     </figure>
+    <!-- changed from div to main
+    this contains the main content of the page -->
     <main class="content">
+        <!-- changed these nested divs to sections -->
         <section id="search-engine-optimization" class="search-engine-optimization">
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="sketch of search engine optimization content and goals">
             <h2>Search Engine Optimization</h2>
@@ -67,6 +73,8 @@ WHEN I view the title element
             </p>
         </section>
     </main>
+    <!-- changed from div to aside 
+    content that is indirectly related to the main content of the page -->
     <aside class="benefits">
         <section class="benefit-lead">
             <h3>Lead Generation</h3>
@@ -90,7 +98,10 @@ WHEN I view the title element
             </p>
         </section>
     </aside>
+    <!-- changed from div to footer 
+    containing info about the author -->
     <footer class="footer">
+        <!-- changed from h2 to h3 -->
         <h3>Made with ❤️️ by Horiseon</h3>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
